@@ -17,3 +17,7 @@ A Streamlit-based tool for scraping websites, extracting leads (emails, phones, 
    ```bash
    git clone https://github.com/your-username/smart-leadgen-ai.git
    cd smart-leadgen-ai
+
+
+**NOTE**
+You can install the requirements independently according to your system specifications (if the provided requirements.txt causes any dependency conflicts)
