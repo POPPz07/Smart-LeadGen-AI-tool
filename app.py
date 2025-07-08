@@ -50,22 +50,6 @@ if input_mode == "Enter a domain":
 # -------------------------------
 # 📤 Mode 2: CSV Upload
 # -------------------------------
-# elif input_mode == "Upload CSV":
-#     uploaded_file = st.file_uploader("Upload CSV with column 'domain'", type=["csv", "xlsx"])
-#     if uploaded_file:
-#         df = None
-#         if uploaded_file.name.endswith('.csv'):
-#             df = pd.read_csv(uploaded_file)
-#         elif uploaded_file.name.endswith('.xlsx'):
-#             df = pd.read_excel(uploaded_file)
-#
-#         if df is not None:
-#             if "domain" in df.columns:
-#                 domains = df["domain"].dropna().tolist()
-#                 st.success(f"✅ {len(domains)} domains loaded.")
-#                 st.session_state["domains_to_scrape"] = domains
-#             else:
-#                 st.warning("⚠️ File must contain a column named 'domain'.")
 
 elif input_mode == "Upload CSV":
     uploaded_file = st.file_uploader("Upload CSV or XLSX with column 'domain'", type=["csv", "xlsx"])
